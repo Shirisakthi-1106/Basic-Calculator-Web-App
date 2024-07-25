@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ff7e5f, #feb47b, #ff6f61, #d65a6f);
+    font-family: Arial, sans-serif;
+}
+.header{
+    width:100%;
+    margin-bottom: 20px;;
+    text-align: center;
+    color:black;
+
+
+}
+
+.container {
+    width: 300px; /* Width of the calculator */
+    height: 300px; /* Height of the calculator */
+    display: flex;
+    flex-direction: column;
+    background-color: #333; /* Dark background for the calculator */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding around the container */
+    
+}
+
+.display {
+    width: 100%; /* Full width of the container */
+    height: 90px; /* Height of the display area */
+    background-color: black; /* Dark background for the display */
+    color: white; /* White text color */
+    margin-bottom: 10px; /* Space between display and buttons */
+   
+    padding: 10px; /* Padding inside the display */
+    font-size: 2em; /* Font size for the display text */
+    text-align: right; /* Align text to the right */
+    border-radius: 5px; /* Rounded corners for the display */
+    box-sizing: border-box; /* Include padding in width and height */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-rows: repeat(4, 1fr); /* 5 rows to fit all buttons */
+    gap: 20px; /* Space between buttons */
+   
+}
+
+.box, .equalto, .clear {
+    background-color: #444; /* Dark gray background for buttons */
+    color: white; /* White text color */
+    border-radius: 5px; /* Rounded corners for buttons */
+    cursor: pointer;
+    font-size: 1.5em;
+    text-align: center;
+    
+}
+
+.box:hover, .equalto:hover, .clear:hover {
+    background-color: #555; /* Slightly lighter gray on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.equalto {
+    background-color: #f39c12; /* Bright color for equals button */
+}
+.add,.subtract,.multiply,.divide{
+    background-color: #f39c12;
+}
+
+.clear {
+    background-color: #e74c3c; /* Bright color for clear button */
+}
